@@ -1,0 +1,10 @@
+count=150
+description=humidity sensor
+accuracy=+/-0.8%rF 
+measuring_range=0...100%rF
+temperature_range=-10...60°C
+interface=USB/UART
+power_supply=10...40VDC/15...28VAC
+weight=23g
+price=9.95
+currency=CHF

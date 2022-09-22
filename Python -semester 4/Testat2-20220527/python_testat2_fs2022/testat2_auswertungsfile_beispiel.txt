@@ -1,0 +1,44 @@
+------------------------------------------------------------------------------
+2. Allgemeine Bewertungskriterien (3.0P)
+------------------------------------------------------------------------------
+- T201 (1.0P): Die Funktionen besitzen aussagekräftige Docstrings. 
+- T202 (2.0P): Der Python-Codestil entspricht den PEP8-Empfehlungen.
+
+------------------------------------------------------------------------------
+4. netlist_parser(fname) (5.0P)
+------------------------------------------------------------------------------
+- T401 (0.5P): Die Funktion ist aufrufbar und gibt ein Dictionary zurück.
+- T402 (2.5P): Der Inhalt des zurückgegebenen Dictionaries ist korrekt (Netzliste in Grossschreibung, ohne Kommentare, n+/n- als String, value als float) 
+- T403 (1.0P): Auch Gross-/Kleinschreibung gemischt wird berücksichtigt (R1/r1, meg/MEG, k/K, ...).
+- T404 (0.5P): Auch Zeilenkommentare werden berücksichtigt (*).
+- T405 (0.5P): Auch Kommentare am Zeilenende werden berücksichtigt (;).
+
+------------------------------------------------------------------------------
+5. inventory(elements)  (2.0P)
+------------------------------------------------------------------------------
+- T501(0.5P): Die Funktion ist aufrufbar und gibt einen String zurück.
+- T502(1.5P): Der Inhalt des zurückgegebenen Strings ist korrekt.  
+
+------------------------------------------------------------------------------
+6. mna_build(elements)  (5.0P)
+------------------------------------------------------------------------------
+- T601 (1.0P): Die Funktion ist aufrufbar und gibt eine Liste, eine Matrix und einen Vektor mit der korrekten Shape zurück.
+- T602 (1.0P): Die zurückgegbene Liste unknowns ist korrekt. (Die Reihenfolge der Einträge in unknowns ist frei wählbar). 
+- T603 (1.0P): Die Werte in M für Widerstände sind korrekt. 
+- T604 (1.0P): Die Werte in y für Stromquellen sind korrekt. 
+- T605 (1.0P): Die Werte in M und y für Spannungsquellen sind korrekt. 
+
+------------------------------------------------------------------------------
+7. mna_solve(unknown, M, y)  (2.0P)
+------------------------------------------------------------------------------
+- T701 (0.5P): Die Funktion ist aufrufbar und gibt ein Dictionary zurück.
+- T702 (1.5P): Der Inhalt des zurückgegebenen Dictionaries ist korrekt.  
+
+------------------------------------------------------------------------------
+8. mna_report(elements, solution)  (4.0P)
+------------------------------------------------------------------------------
+- T801 (1.0P): Die Funktion ist aufrufbar und gibt ein Dictionary mit den korrekten Keys zurück.
+- T802 (1.0P): V/I-Werte aller gegebenen Widerstände sind korrekt. 
+- T803 (1.0P): V/I-Werte aller gegebenen Spannungsquellen sind korrekt. 
+- T804 (1.0P): V/I-Werte aller gegebenen Stromquellen sind korrekt. 
+

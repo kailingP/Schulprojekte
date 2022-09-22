@@ -1,0 +1,29 @@
+0.50P/0.50P, T201, Allgemein: Nur die in der Aufgabenstellung gegebenen Methoden dürfen public sein.
+0.50P/0.50P, T202, Allgemein: Es gibt keine public Instanzvariablen.
+1.00P/1.00P, T203, Allgemein: Die Klasse und Methoden besitzen aussagekräftige Docstrings.
+1.00P/1.00P, T204, Allgemein Python-Codestil entspricht den PEP8-Empfehlungen.
+1.00P/1.00P, T511, ModuleBuilder.__init__(): Die Klasse lässt sich instanziieren und die Methode liest die gegebene Textdatei (encoding='utf-8') ein.
+0.50P/0.50P, T512, ModuleBuilder.__init__(): Die Instanzvariable self._order_data existiert als Dictionary.
+0.50P/0.50P, T513, ModuleBuilder.__init__(): Die Instanzvariable self._order_data enthält alle Informationen aus dem vorgegebenen order_file Files in der korrekten Form.
+0.50P/0.50P, T514, ModuleBuilder.__init__(): Die Instanzvariable self._units existiert und ist vom Type int.
+0.50P/0.50P, T515, ModuleBuilder.__init__(): Die Instanzvariable self._units hat den korrekten Wert.
+1.00P/1.00P, T516, ModuleBuilder.__init__(): Die Instanzvariable self._storage existiert und ist vom Typ Class Storage.
+1.00P/1.00P, T521, ModuleBuilder.__str__(): Die Methode gibt einen String zurück.
+1.00P/1.00P, T522, ModuleBuilder.__str__(): Die Methode gibt den String in der korrekten Form zurück.
+1.00P/1.00P, T523, ModuleBuilder.__str__(): Die Spaltenbreiten passen sich automatisch dem Inhalt an.
+0.50P/0.50P, T531, ModuleBuilder.availability(): Die Methode liefert ein Dictionary zurück.
+0.50P/0.50P, T532, ModuleBuilder.availability(): Das zurückgegebene Dictionary hat die korrekte Form.
+0.50P/0.50P, T533, ModuleBuilder.availability(): Ist der Parameter units None, so wird mit self._units gerechnet.
+0.50P/0.50P, T534, ModuleBuilder.availability(): Ist der Parameter units nicht None, so wird mit units gerechnet.
+0.50P/0.50P, T535, ModuleBuilder.availability(): Ist der Parameter units < 0, so wird eine ValueError Exception geworfen.
+0.50P/0.50P, T536, ModuleBuilder.availability(): Die ValueError Exception erzeugt die korrekte Fehlermeldung.
+1.00P/1.00P, T537, ModuleBuilder.availability(): Sollte ein Modul nicht im Lager vorzufinden sein, so wird im zurückgegebenen Dictionary beim Schlüsselwert der entsprechenden article_number der Wert missing auf den Wert required gesetzt.
+1.00P/1.00P, T541, ModuleBuilder.build(): Fehlen Module im Lager, so wird eine MissingModuleError Exception geworfen.
+1.00P/1.00P, T542, ModuleBuilder.build(): Die MissingModuleErrorException gibt in der Fehlermeldung die fehlenden Module an.
+0.50P/0.50P, T543, ModuleBuilder.build(): Die Methode gibt die gesamte Anzahl aus dem Lager entnommener Module zurück.
+0.50P/0.50P, T544, ModuleBuilder.build(): Die Anzahl Module im Lager wurde durch die entnommene Menge dekrementiert, (take_module() wurde demnach korrekt aufgerufen).
+0.50P/0.50P, T611, MissingModuleError.__init__(): Die Instanzvariable self.modules existiert und ist vom Typ tuple.
+0.50P/0.50P, T612, MissingModuleError.__init__(): Die Instanzvariable self.modules hat den korrekten Wert.
+2.00P/2.00P, T613, MissingModuleError.__init__(): Die Exception erzeugt die korrekte Fehlermeldung.
+
+Total Punkte: 20

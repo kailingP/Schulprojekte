@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Scissors Paper Stone</title>
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+<div id="rankingPage">
+    <div id="serverData">
+    </div>
+
+</div>
+<section id="startPage">
+    <button id="switchToSever">Switch to server</button>
+
+    <h1>Rank List</h1>
+    <ol id="rangList">
+    </ol>
+    <hr>
+    <p>Start a new game!</p>
+    <p><label>Name:<input type="text" id="playerName" name="name" required></label></p>
+    <br>
+    <button id="startGameButton">start the game</button>
+</section>
+
+<section id="gamePage">
+    <p class="greeting"></p>
+    <div class="flex-container">
+        <div id="playOptions" class="flex-row">
+            <button value="Scissors" name="playerHandScissors" class="flex-item option">Scissors</button>
+            <button value="Paper" name="playerHandPaper" class="flex-item option">Paper</button>
+            <button value="Stone" name="playerHandStone" class="flex-item option">Stone</button>
+        </div>
+        <div id="countDown" class="flex-row"><p>VS</p></div>
+        <div id="systemHand" class="flex-row "></div>
+        <button id="toRankingButton">Back to ranking</button>
+
+        <h2>History</h2>
+        <table id="history">
+        </table>
+    </div>
+
+</section>
+<script src="./scripts/main.js" type="module"></script>
+</body>
+</html>

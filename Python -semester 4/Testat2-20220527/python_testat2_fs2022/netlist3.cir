@@ -1,0 +1,8 @@
+* Four resistors, two current sources, and a voltage source.
+R1 1 0 0.015Meg
+R2 2 0 8.2e3
+R3 3 1 1.1meg
+R4 4 2 22.2k
+Ix 1 2 1310u ; current source
+Iy 4 3 19n; another current source
+Vz 4 2 104.5M; voltage source

@@ -1,0 +1,73 @@
+h1 {
+    color: blueviolet;
+}
+
+body {
+    width: 40%;
+    margin: auto;
+}
+
+button {
+    background-color: beige;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#startPage {
+    font-size: 1.2rem;
+}
+
+#startPage h1 {
+    text-align: center;
+}
+
+#switchToSever {
+    margin-top: 1rem;
+}
+
+.flex-container {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+#rangList {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#gamePage {
+    display: none;
+    font-size: 1.2rem;
+}
+
+.greeting {
+    font-weight: bold;
+}
+
+.play-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-item {
+    outline: 2px solid darkgrey;
+}
+
+#systemHand {
+    outline: 2px solid darkgrey;
+}
+
+.flex-container div,
+.flex-container button {
+    margin-top: 15px;
+}
+
+#toRankingButton {
+    display: block;
+}
+
+#history {
+    width: 100%;
+}

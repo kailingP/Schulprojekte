@@ -1,0 +1,6 @@
+* Dies ist eine Schaltung.
+R1 1 2 2.2
+R2 2 0 4k
+R3 2 3 0.1MEG
+Iq 0 1 DC 50e-3 ; Stromquelle
+Vcc 3 0 DC 230 ; Spannungsquelle

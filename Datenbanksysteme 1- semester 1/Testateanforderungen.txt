@@ -1,0 +1,170 @@
+Testat 1: Beschreibung in Prosa und Domain Model in UML
+
+Organisatorisches:
+
+    Arbeit im 2er-Team (3er-Team und Einzelarbeit nur in begründeten Ausnahmefällen)
+    Abgabetermin: Siehe "Organisatorisches"
+    Abgabe-Form: Ein (einziges!) zu beurteilendes PDF-Dokument
+    ... Der Dateiname des PDF-Dokuments ist wie folgt aufgebaut: <<Nachname1>>_<<Nachname2>>_<<Kurzer_Projekttitel>>.pdf, also z.B. Mueller_Keller_Bibliotheksverwaltung.pdf
+
+Aufgabenstellung
+
+Das Fernziel der Testat-Aufgaben ist, eine eigene Datenbank zu entwerfen. Erfinden Sie dazu ein eigenes Beispiel, das den untenstehenden Bedingungen genügt. Diese eigenständige Datenbank wird über die weiteren Testatabgaben weiterentwickelt. Das Ziel dieser ersten Abgabe ist die Erstellung eines Domain Models.
+
+Die Datenbank (bzw. das Domain Model) hat folgende Eigenschaften:
+
+    Projekttitel (z.B. "Bibliotheksverwaltung")
+    Beschreibung in Prosa mit (vgl. dazu die BibliothekDB)
+        mind. 5 Sätzen
+        mind. 3 Konsistenzbedingungen (Eine K. ist eine Aussage, die einschränkt, welche Konstellationen / Zustände / Situationen im Modell zulässig (konsistent) sind. Eine K. wird typischerweise als Notiz zu einer oder zwei Klassen oder Assoziationen dargestellt. Kardinalitäten sind auch eine K. - aber die zählen hier nicht).
+    Mindestens 4 und max. 8 Klassen (bevorzugt nur 4 bis 6 Klassen), darunter
+        mindestens eine Vererbung
+        mindestens eine Mehrere-zu-Mehrere-Beziehung (=> Assoziation erzeugt eine Beziehungs-Tabelle)
+
+Folgende Elemente soll die Lösung enthalten:
+
+    In einem einzigen Dokument (als zu beurteilendes PDF):
+        Beschreibung in Prosa
+        Domain Model beschrieben als UML-Klassendiagramm:
+            mit Attributen.
+            mit Angabe, welche Eigenschaften die Vererbung hat (z.B. overlapping, inclompete).
+            alle nicht-impliziten Beziehungs-Multiplizitäten angegeben.
+            alle Beziehungen mit angeschrieben (also ausser Vererbungen), wobei "angeschrieben" bedeutet, dass die Beziehung einen Assoziationsnamen trägt oder mind. eine der involvierten Rollen mit einer Rollenbezeichnung versehen ist.
+        Vor- und Nachnamen der Ersteller des Dokumentes
+
+
+Beispiele von Themen zur Inspiration (bitte nicht 1:1 übernehmen):
+
+    Ruderklub Bootsreservation
+    Verwaltung von Zirkus-Artisten, -Tieren und -Aufführung
+    Auto-Verleih (Autos, Mietvertrag, Kunden)
+    Wohnungsvermietung
+    Hotelzimmer-Reservierung
+    Werkzeugpark einer Firma (Mitarbeiter, Magaziner, Werkzeug, Ausleihe)
+    Game-Shop (Spiele, Angestellte, Kunden)
+    Webshop für Kleider, Hardware, etc. (Artikel, Bestellung, Kunde)
+    Filmverwaltung (Filme, Serien, Benutzer-Wertung)
+    Clubschule (Kurse, Teilnehmer und Räume)
+    Konzertsaal-Verwaltung (Saal, Raum, Aufführung, Angestellte, Besucher, Tickets)
+    Zoo-Verwaltung (Personal, Besucher, Tickets, Gehege, Tiere, Tierart)
+    Konzertverwaltung (Konzerte geplant/durchgeführt, Ticket, Besucher)
+    Musikliederverwaltung (Artist, Album, Song, Stil, Bewertung)
+    Blog-Verwaltung
+    Portal für das Nachschlagen von Film- und Schauspielerinformationen.
+    Social Media- und Dating-Plattform (Account, Profil, Photo, Activity, Friend)
+    Datenbank zur Verwaltung von Logs und PowerShell-Scripten
+
+
+
+Zuletzt geändert: Dienstag, 29. September 2020, 17:42
+
+Testat 2: Relationale Schreibweise und SQL DDL
+Abschlussbedingungen
+Geöffnet: Dienstag, 13. Oktober 2020, 08:00
+Fällig: Dienstag, 3. November 2020, 08:00
+Organisatorisches:
+
+    Es wird die Teamarbeit fortgesetzt.
+    Abgabe-Termin: Siehe unten und im Moodle oben
+    Abzugebende Unterlagen:
+        PDF ggf. aktualisiert aus Abgabe 1.
+        Sämtliche SQL-Skripts (analog zu AngProj Variante 1), d.h. lauffähig mit Kommandozeilen-Tool psql:
+        psql -U postgres -v ON_ERROR_STOP=on -f 0_runAllScripts.sql
+
+Aufgabe
+
+Das Ziel dieses Testats ist, aus Ihrer Datenbank das Relationale Modell zu erstellen, eine Datenbank mit Daten bereitzustellen und erste Anfragen (Queries) zu formulieren. D.h. es ist eine Datenbank anzulegen und sie mit genügend Daten zu füllen.
+
+Dazu ist die Datenbank auf Basis des aktuellsten (ev. korrigierten) Domain Models zu entwerfen (Abbildung UML → Relational → SQL DDL), das Sie im Testat 1 abgegeben haben. Notieren Sie Ihren Entscheid, wie Sie die UML-Vererbung relational abgebildet haben (Name der Abbildungs-Regel und Begründung, warum diese Abbildung verwendet haben). Das in PostgreSQL verfügbare INHERITS ist nicht erlaubt.
+Abgabe
+
+Ihre Abgabe soll folgende Deliveries enthalten:
+
+    PDF-Dokument mit
+        der gemäss Feedback der vorherigen Abgabe 1 aktualisierten Aufgabenstellung inkl. überarbeitetem Domain-Modell.
+        Relationales Modell in relationaler Schreibweise, analog Musterlösung logisches DB-Modell Flugverwaltung.
+        Begründung, welche Vererbungs-Abbildung(en) Sie gewählt haben.
+    SQL-Skripte gemäss nachfolgender Struktur. Jede Datei enthält als Erstes in einem Kommentar die Namen der Autoren.
+
+    SQL-Skript, mit dem die Datenbank komplett gelöscht und wieder angelegt wird, inkl. User (0_runAllScripts.sql).
+    SQL-Skript, mit DDL-Statements für die Tabellen (2_schema.sql).
+    SQL-Skript, mit INSERT-Statements, mind. 7 Tupel pro Tabelle (3_inserts.sql), ausgenommen in begründeten Fällen wie z.B. "schwache" Entitätsmengen, z.B. Aufzähl-/Typ-Tabellen, oder "Sohntabellen", wenn es mehr als zwei davon gibt (in der Doku. explizit vermerken).
+    SQL-Skript mit Statements, welche die Constraints enthalten (4_constraints.sql). Primary-Key- und NOT NULL-Constraints sollen jedoch nicht hier, sondern in den CREATE TABLE-Statements in 2_schema.sql umgesetzt werden. Foreign-Key-Constraints können wahlweise in den CREATE TABLE-Statements in 2_schema.sql oder per ALTER TABLE-Statements in 4_constraints.sql umgesetzt werden.
+
+Beispiel einer Datei-Struktur bei der Abgabe:
+
+ |-- Dbs1_Testat_2_Keller_Mueller.PDF
+ |-- 0_runAllScripts.sql
+ |-- (1_extensions.sql)  -- Hier nicht verlangt/weglassen
+ |-- 2_schema.sql        -- Enthält CREATE TABLE mit PK und wo nötig NOT NULL
+ |-- 3_inserts.sql
+ |-- 4_constraints.sql   -- Mit ALTER TABLE ... für Constraints, die nicht schon in 2_schmema.sql gesetzt wurden
+ |-- (5_queries.sql)     -- Hier noch nicht verlangt/weglassen
+
+
+Auswertung:
+
+    Formale Kriterien erfüllt? Wenn nein, eine einzige Aufforderung zur Nachbesserung.
+        Name angegeben
+        kein ZIP
+        SQL-Skripte komplett
+    Skript ausführbar? (psql -U postgres -v ON_ERROR_STOP=on -f 0_runAllScripts.sql) ? Wenn nein, eine einzige Aufforderung zur Nachbesserung.
+        Datenbank inklusive Benutzer wird erstellt
+        Tabellen werden erstellt
+        Daten werden eingefügt
+
+Feedback durch Übungsbetreuer auf Verlangen in den Übungen.
+
+
+Testat 3: Queries und Views
+Abschlussbedingungen
+Geöffnet: Dienstag, 10. November 2020, 08:00
+Fällig: Dienstag, 24. November 2020, 08:00
+Aufgaben
+
+Aufbauend auf Ihrem Projekt - das heisst auf dem nötigenfalls aktualisierten Testat 2 - sollen folgende Aufgaben sinnvoll gelöst und als ausführbare Skripts wieder zusammen mit dem Dokument/PDF abgegeben werden (einzelne Dateien ohne Unterordner, kein Zip):
+Aufgabe 1: Einfache Queries
+
+SQL-Datei mit folgenden 4 SQL-Queries, wobei vor jeder Anfrage (Query) ein Kommentar steht mit präziser Beschreibung was die Query macht (Datei 5_queries.sql):
+
+    1.1. Eine Query mit DISTINCT.
+    1.2. Eine Query, die einen JOIN über drei oder mehr Tabellen enthält (bitte als "New Style"-JOIN mit "JOIN ... ON").
+    1.3. Eine Query mit einer Unterabfrage mit Angabe, ob diese Query korreliert ist oder unkorreliert.
+    1.4. Eine Query, die eines der vier folgenden Statements enthält (gegebenenfalls mit NOT davor): ANY, IN, EXISTS oder ALL.
+
+Aufgabe 2: Common Table Expressions und Window-Funktionen
+
+    2.1 Common Table Expressions/WITH-Statements:
+        Schreiben Sie zunächst eine Anfrage mit einer unkorrelierten Unterabfrage und dokumentieren Sie diese (einfacher Kommentar vor dem SQL).
+        Formen Sie dann diese Subquery um in eine Common Table Expression.
+    Ihre Abgabe muss sowohl die Query mit unkorrelierten Unterabfrage (vor der Umformung) als auch die Query mit Common Table Expression enthalten.
+    2.2 GROUP-BY und Window-Funktionen:
+        Schreiben Sie eine sinnvolle Query mit einer GROUP BY-Klausel.
+        Schreiben Sie eine sinnvolle Query mit einer Window-Funktion.
+
+Aufgabe 3: Views
+
+    3.1 Views:
+        Schreiben Sie eine View, die mindestens drei Tabellen umfasst.
+        Schreiben Sie dann eine normale Query, welche diese View verwendet.
+    3.2 Schreiben Sie eine zweite View (also eine "einfachere" View), die sich updaten lässt. Testen Sie, dass die View sich wirklich updaten lässt, wie folgt:
+        View schreiben (Tipp: Beschränkungen von PostgreSQL beachten, so dass die View "updateable" ist).
+        Eine Änderung eines bestimmten Datensatzes über diese View schreiben mittels UPDATE (UPDATE <Ihre View> SET ... WHERE ...;).
+
+Abgabe und Auswertung
+
+Alle formalen Kriterien müssen erfüllt sein, sonst gibt es evtl. 0 Punkte. Die Kriterien sind unter anderem:
+
+    Rechtzeitige Abgabe/Upload; je einzeln, nicht als Zip-File.
+    Dokumentation/PDF (evtl. mit aktualisiertem Inhalt), mit Autoren-Namen vorhanden.
+    Sinnige DB-Objekt-Namen verwenden: DB-Name, User-Name und Passwort identisch (falls nötig); alle und alles kleingeschrieben.
+    SQL-Skripte komplett (evtl. aktualisierte Datei 3_inserts.sql).
+    Folgender psql-Befehl kann erfolgreich durchgeführt werden - auch mehrmals hintereinander:
+    % psql -U postgres -v ON_ERROR_STOP=on -f 0_runAllScripts.sql
+    D.h.: Datenbank und Benutzer sind erstellt; das PW wird auf Konsole ausgegeben; alle Tabellen sind erstellt; die aus Testat 2 verlangten Daten sind eingefügt; hier verlangte Queries werden ausgeführt, und Resultate werden auf der Konsole ausgegeben.
+
+Es gibt wieder etwas Feedback online und dann vor allem in den Übungen durch den Übungsbetreuer.
+
+Tipp: Geben Sie frühzeitig ab und testen Sie sorgfältig, ob das Skript ausführbar ist (es gibt dieses Mal keine Aufforderung zur Nachbesserung mehr!).
+
+

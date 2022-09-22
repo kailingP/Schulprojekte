@@ -1,0 +1,7 @@
+count=17
+description=enclosure
+material=aluminium
+dimension=130x72x32mm
+weight=180g
+price=24
+currency=CHF

@@ -1,0 +1,7 @@
+count=17
+description=enclosure
+material=polycarbonat
+dimension=105x70x40mm
+weight=130g
+price=15
+currency=CHF

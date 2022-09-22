@@ -1,0 +1,9 @@
+count=100
+accuracy=+/-0.2K
+measuring_range=-100...+600°C
+description=temperature sensor
+power_supply=15...40VDC/14...28VAC
+interface=USB/UART
+weight=45g
+price=29.95
+currency=CHF

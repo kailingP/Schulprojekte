@@ -1,0 +1,9 @@
+count=49
+description=C02 sensor
+accuracy=+/-30ppm
+measuring_range=0...5000ppm
+power_supply=20...40VDC/14...28VAC
+interface=USB/UART/I2C
+weight=99g
+price=79.95
+currency=CHF

@@ -1,0 +1,10 @@
+count=9
+description=microcontroller module
+flash_memory=128kB
+ram=8kB
+gpios=37
+power_supply=1.8...9VDC
+interface=USB/UART/I2C/SBW
+weight=10g
+price=4.95
+currency=CHF

@@ -1,0 +1,9 @@
+count=75
+description=pressure sensor
+accuracy=+/-1hPa
+power_supply=9...40VDC/14...28VAC
+measuring_range=300...1100hPa
+interface=USB
+weight=85g
+price=14.95
+currency=CHF

@@ -1,0 +1,10 @@
+Number of Units;2;
+Reference;Article Number;Module Description
+T1;TF1902;Temperature Sensor
+T2;TF1902;Temperature Sensor
+C1;CO304;CO2 Sensor
+F1;HL20D;Humidity Sensor
+P1;P394N;Pressure Sensor
+M1;MCU940T;Microcontroller Module
+D1;DP419;Display Module
+G1;AL130;Enclosure

@@ -1,0 +1,14 @@
+* A resistor cube with a voltage source across two outermost corners.
+R1 1 0 2.4
+R2 2 1 2.4
+R3 2 3 2.4
+R4 3 0 2.4
+R5 4 1 2.4
+R6 5 2 2.4
+R7 6 3 2.4
+R8 7 0 2.4
+R9 4 7 2.4
+R10 5 4 2.4
+R11 5 6 2.4
+R12 6 7 2.4
+Vbat 5 0 12
