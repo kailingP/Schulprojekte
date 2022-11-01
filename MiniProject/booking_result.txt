@@ -1,0 +1,111 @@
+{'venue-chain': string_value: ""
+, 'checkout-date': list_value {
+  values {
+    string_value: "2022-11-02T12:00:00-04:00"
+  }
+}
+, 'sort': string_value: ""
+, 'price': list_value {
+  values {
+    struct_value {
+      fields {
+        key: "currency"
+        value {
+          string_value: "USD"
+        }
+      }
+      fields {
+        key: "amount"
+        value {
+          number_value: 40
+        }
+      }
+    }
+  }
+}
+, 'child': string_value: ""
+, 'venue-type': string_value: "hotel"
+, 'room-facility': list_value {
+  values {
+    string_value: "hair dryer"
+  }
+}
+, 'room-number': list_value {
+  values {
+    number_value: 1
+  }
+}
+, 'adult': string_value: ""
+, 'night': string_value: ""
+, 'venue-facility': list_value {
+}
+, 'venue-title': string_value: ""
+, 'star': string_value: ""
+, 'location': list_value {
+  values {
+    struct_value {
+      fields {
+        key: "zip-code"
+        value {
+          string_value: ""
+        }
+      }
+      fields {
+        key: "subadmin-area"
+        value {
+          string_value: ""
+        }
+      }
+      fields {
+        key: "street-address"
+        value {
+          string_value: ""
+        }
+      }
+      fields {
+        key: "shortcut"
+        value {
+          string_value: ""
+        }
+      }
+      fields {
+        key: "island"
+        value {
+          string_value: ""
+        }
+      }
+      fields {
+        key: "country"
+        value {
+          string_value: ""
+        }
+      }
+      fields {
+        key: "city"
+        value {
+          string_value: "Nnono"
+        }
+      }
+      fields {
+        key: "business-name"
+        value {
+          string_value: ""
+        }
+      }
+      fields {
+        key: "admin-area"
+        value {
+          string_value: ""
+        }
+      }
+    }
+  }
+}
+, 'checkin-date': list_value {
+  values {
+    string_value: "2022-11-01T12:00:00-04:00"
+  }
+}
+, 'currency-name': string_value: ""
+, 'payment': string_value: "paypal"
+}
